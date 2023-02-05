@@ -1,0 +1,73 @@
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #000 #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    font-family: $font_name;
+    font-weight: 300;
+    color: $textColor;
+    transition: 0.3s ease;
+
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #000;
+    }
+    *.ovh {
+        overflow: hidden;
+    }
+}
+.main-wrapper {
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width:479px) {
+    .col-mob-12 {
+        width: 100%;
+    }
+    .col-mob-9 {
+        width: 75%;
+    }
+    .col-mob-8 {
+        width: 66.6666%;
+    }
+    .col-mob-3 {
+        width: 25%;
+    }
+    .col-mob-4 {
+        width: 33.3333%;
+    }
+    .hidden-mob {
+        display: none;
+    }
+}
+@media (min-width:481px) {
+    .visible-mob {
+        display: none;
+    }
+}
+
+.mk-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.mk-inlinelist {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}

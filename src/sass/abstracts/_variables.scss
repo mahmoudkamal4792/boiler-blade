@@ -1,0 +1,19 @@
+$primary: #58388d;
+:root {
+    // Common
+    --primary-color: $primary;
+    --secondary-color: #8463bf;
+    --text-color: #000;
+}
+
+$primaryColor:var(--primary-color);
+$secondaryColor:var(--secondary-color);
+$textColor:var(--text-color);
+
+// Fonts
+$font_name: 'Montserrat-Arabic';
+$weight_light: 300;
+$weight_regular: 400;
+$weight_medium: 500;
+$weight_semibold: 600;
+$weight_bold: 700;

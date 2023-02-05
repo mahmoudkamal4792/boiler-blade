@@ -1,0 +1,39 @@
+@font-face {
+    font-family: $font_name;
+    src: local('Montserrat Arabic Light'), local('Montserrat-Arabic-Light'),
+        url('../../fonts/Montserrat-Arabic-Light.woff2') format('woff2'),
+        url('../../fonts/Montserrat-Arabic-Light.woff') format('woff');
+    font-weight: $weight_light;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font_name;
+    src: local('Montserrat Arabic Regular'), local('Montserrat-Arabic-Regular'),
+        url('../../fonts/Montserrat-Arabic-Regular.woff2') format('woff2'),
+        url('../../fonts/Montserrat-Arabic-Regular.woff') format('woff');
+    font-weight: $weight_regular;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font_name;
+    src: local('Montserrat Arabic Medium'), local('Montserrat-Arabic-Medium'),
+        url('../../fonts/Montserrat-Arabic-Medium.woff2') format('woff2'),
+        url('../../fonts/Montserrat-Arabic-Medium.woff') format('woff');
+    font-weight: $weight_medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font_name;
+    src: local('Montserrat Arabic Bold'), local('Montserrat-Arabic-Bold'),
+        url('../../fonts/Montserrat-Arabic-Bold.woff2') format('woff2'),
+        url('../../fonts/Montserrat-Arabic-Bold.woff') format('woff');
+    font-weight: $weight_bold;
+    font-style: normal;
+    font-display: swap;
+}

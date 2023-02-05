@@ -1,0 +1,20 @@
+{
+    "posts": [
+        {
+            "title": "Post title",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi? Debitis provident architecto quod molestias et cumque, accusamus deserunt fugiat voluptate totam. Aliquam quasi tempora facilis pariatur ex minus obcaecati!"
+        },
+        {
+            "title": "Post title",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi? Debitis provident architecto quod molestias et cumque, accusamus deserunt fugiat voluptate totam. Aliquam quasi tempora facilis pariatur ex minus obcaecati!"
+        },
+        {
+            "title": "Post title",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi? Debitis provident architecto quod molestias et cumque, accusamus deserunt fugiat voluptate totam. Aliquam quasi tempora facilis pariatur ex minus obcaecati!"
+        },
+        {
+            "title": "Post title",
+            "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi? Debitis provident architecto quod molestias et cumque, accusamus deserunt fugiat voluptate totam. Aliquam quasi tempora facilis pariatur ex minus obcaecati!"
+        }
+    ]
+}

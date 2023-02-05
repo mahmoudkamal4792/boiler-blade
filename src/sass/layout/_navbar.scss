@@ -1,0 +1,130 @@
+nav {
+
+    --menu-width: 100vw;
+    z-index: 99999;
+    position: relative;
+
+    .sidenav-elements {
+        display: none;
+
+        @include sm {
+            display: block;
+        }
+    }
+
+    @include sm {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        inset-inline-start: calc(0px - var(--menu-width));
+        height: 100vh;
+        width: var(--menu-width);
+        padding: 20px;
+        overflow-y: auto;
+        background-color: var(--header-bg-color);
+        transition: 0.3s ease;
+
+        body.active-navbar & {
+            inset-inline-start: 0;
+        }
+    }
+    .main-navbar {
+        margin-top: 20px;
+    
+        .main-nav-menu {
+            justify-content: center;
+            gap: 25px;
+            
+            @include sm {
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            > li {
+                position: relative;
+                color: var(--font-color);
+
+                @include sm {
+                    color: var(--font-color);
+                }
+    
+                > a {
+                    color: inherit;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    display: block;
+                }
+    
+                &:hover {
+                    color: $primaryColor;
+                }
+    
+                &.active {
+                    color: $primaryColor;
+                }
+    
+                &.active:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -1px;
+                    background-color: $primaryColor;
+                    height: 2px;
+                    left: 0;
+                    right: 0;
+
+                    @include sm {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-btn {
+    display: none;
+    color: var(--font-color);
+    font-size: 26px;
+
+    @include sm {
+        display: block;
+    }
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(32px) brightness(0.5);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99998;
+    display: none;
+    transition: 0.3s ease;
+
+    @include sm {
+        display: block;
+    }
+
+    body.active-navbar & {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.nav-close-btn {
+    padding: 0;
+    font-size: 26px;
+    color: var(--font-color);
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+}

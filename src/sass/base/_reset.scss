@@ -1,0 +1,24 @@
+/* General Resets */
+input:focus, button:focus, a:focus, select:focus, textarea:focus {
+    outline: 0;
+}
+input::placeholder {
+    color: inherit;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    color:inherit
+}
+button {
+    border: none;
+    background: none;
+    outline: 0;
+}
+a, img, button, input, select {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease
+}
+[role="button"] {
+    cursor: pointer;
+}
